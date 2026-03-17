@@ -26,4 +26,12 @@ def get_requirements() -> List[str]:
 
     return requirement_lst
 
-print(get_requirements())
+setup(
+    Namw = 'NetworkSecurity',
+    version = '0.1.0',
+    description = 'A package for network security analysis and monitoring.',
+    author = 'Bijesh Mishra',
+    author_email = 'bjshmshr@gmail.com',
+    packages = find_packages(),
+    install_requires = get_requirements(),
+)
