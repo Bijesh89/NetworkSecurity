@@ -77,7 +77,7 @@ class ModelTrainer:
                 "Decision Tree": DecisionTreeClassifier(),
                 "Gradient Boosting": GradientBoostingClassifier(verbose=1),
                 "Logistic Regression": LogisticRegression(verbose=1),
-                "AdaBoost": AdaBoostClassifier(),
+                "AdaBoost": AdaBoostClassifier(algorithm="SAMME"),
             }
         params={
             "Decision Tree": {
